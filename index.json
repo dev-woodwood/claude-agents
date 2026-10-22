@@ -1,6 +1,172 @@
 {
   "sets": [
     {
+      "id": "claude-official-agent-sdk-dev",
+      "name": "Claude Official: agent-sdk-dev",
+      "author": "Anthropic",
+      "description": "Claude Code 공식 플러그인 'agent-sdk-dev'의 에이전트 ()",
+      "version": "1.0.0",
+      "agents": [
+        {
+          "name": "agent-sdk-verifier-py",
+          "file": "agent-sdk-verifier-py.md",
+          "description": "Use this agent to verify that a Python Agent SDK application is properly configured, follows SDK bes",
+          "model": "sonnet",
+          "color": ""
+        },
+        {
+          "name": "agent-sdk-verifier-ts",
+          "file": "agent-sdk-verifier-ts.md",
+          "description": "Use this agent to verify that a TypeScript Agent SDK application is properly configured, follows SDK",
+          "model": "sonnet",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "id": "claude-official-code-simplifier",
+      "name": "Claude Official: code-simplifier",
+      "author": "Anthropic",
+      "description": "Claude Code 공식 플러그인 'code-simplifier'의 에이전트 ()",
+      "version": "1.0.0",
+      "agents": [
+        {
+          "name": "code-simplifier",
+          "file": "code-simplifier.md",
+          "description": "Simplifies and refines code for clarity, consistency, and maintainability while preserving all funct",
+          "model": "opus",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "id": "claude-official-feature-dev",
+      "name": "Claude Official: feature-dev",
+      "author": "Anthropic",
+      "description": "Claude Code 공식 플러그인 'feature-dev'의 에이전트 ()",
+      "version": "1.0.0",
+      "agents": [
+        {
+          "name": "code-architect",
+          "file": "code-architect.md",
+          "description": "Designs feature architectures by analyzing existing codebase patterns and conventions, then providin",
+          "model": "sonnet",
+          "color": "green"
+        },
+        {
+          "name": "code-explorer",
+          "file": "code-explorer.md",
+          "description": "Deeply analyzes existing codebase features by tracing execution paths, mapping architecture layers, ",
+          "model": "sonnet",
+          "color": "yellow"
+        },
+        {
+          "name": "code-reviewer",
+          "file": "code-reviewer.md",
+          "description": "Reviews code for bugs, logic errors, security vulnerabilities, code quality issues, and adherence to",
+          "model": "sonnet",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "id": "claude-official-hookify",
+      "name": "Claude Official: hookify",
+      "author": "Anthropic",
+      "description": "Claude Code 공식 플러그인 'hookify'의 에이전트 ()",
+      "version": "1.0.0",
+      "agents": [
+        {
+          "name": "conversation-analyzer",
+          "file": "conversation-analyzer.md",
+          "description": "Use this agent when analyzing conversation transcripts to find behaviors worth preventing with hooks",
+          "model": "inherit",
+          "color": "yellow"
+        }
+      ]
+    },
+    {
+      "id": "claude-official-plugin-dev",
+      "name": "Claude Official: plugin-dev",
+      "author": "Anthropic",
+      "description": "Claude Code 공식 플러그인 'plugin-dev'의 에이전트 ()",
+      "version": "1.0.0",
+      "agents": [
+        {
+          "name": "agent-creator",
+          "file": "agent-creator.md",
+          "description": "|",
+          "model": "sonnet",
+          "color": "magenta"
+        },
+        {
+          "name": "plugin-validator",
+          "file": "plugin-validator.md",
+          "description": "|",
+          "model": "inherit",
+          "color": "yellow"
+        },
+        {
+          "name": "skill-reviewer",
+          "file": "skill-reviewer.md",
+          "description": "|",
+          "model": "inherit",
+          "color": "cyan"
+        }
+      ]
+    },
+    {
+      "id": "claude-official-pr-review-toolkit",
+      "name": "Claude Official: pr-review-toolkit",
+      "author": "Anthropic",
+      "description": "Claude Code 공식 플러그인 'pr-review-toolkit'의 에이전트 ()",
+      "version": "1.0.0",
+      "agents": [
+        {
+          "name": "code-reviewer",
+          "file": "code-reviewer.md",
+          "description": "Use this agent when you need to review code for adherence to project guidelines, style guides, and b",
+          "model": "opus",
+          "color": "green"
+        },
+        {
+          "name": "code-simplifier",
+          "file": "code-simplifier.md",
+          "description": "|",
+          "model": "opus",
+          "color": ""
+        },
+        {
+          "name": "comment-analyzer",
+          "file": "comment-analyzer.md",
+          "description": "Use this agent when you need to analyze code comments for accuracy, completeness, and long-term main",
+          "model": "inherit",
+          "color": "green"
+        },
+        {
+          "name": "pr-test-analyzer",
+          "file": "pr-test-analyzer.md",
+          "description": "Use this agent when you need to review a pull request for test coverage quality and completeness. Th",
+          "model": "inherit",
+          "color": "cyan"
+        },
+        {
+          "name": "silent-failure-hunter",
+          "file": "silent-failure-hunter.md",
+          "description": "Use this agent when reviewing code changes in a pull request to identify silent failures, inadequate",
+          "model": "inherit",
+          "color": "yellow"
+        },
+        {
+          "name": "type-design-analyzer",
+          "file": "type-design-analyzer.md",
+          "description": "Use this agent when you need expert analysis of type design in your codebase. Specifically use it: (",
+          "model": "inherit",
+          "color": "pink"
+        }
+      ]
+    },
+    {
       "id": "kdw-dev-agents",
       "name": "KDW 개발 에이전트 세트",
       "author": "KDW",

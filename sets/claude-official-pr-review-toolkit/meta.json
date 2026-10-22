@@ -1,0 +1,6 @@
+{
+  "name": "Claude Official: pr-review-toolkit",
+  "author": "Anthropic",
+  "description": "Claude Code 공식 플러그인 'pr-review-toolkit'의 에이전트 ()",
+  "version": "1.0.0"
+}
