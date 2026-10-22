@@ -1,60 +1,78 @@
 {
-  "agents": [
+  "sets": [
     {
-      "name": "anti-ai-ui-reviewer",
-      "file": "anti-ai-ui-reviewer.md",
-      "description": "Use this agent when creating, modifying, or reviewing frontend UI components, pages, or layouts. Thi",
-      "model": "opus",
-      "color": "orange"
+      "id": "kdw-dev-agents",
+      "name": "KDW 개발 에이전트 세트",
+      "author": "KDW",
+      "description": "코드 리뷰, UI 검증, QA 테스트, 보안 감사, 기술 설계를 위한 에이전트 모음",
+      "version": "1.0.0",
+      "agents": [
+        {
+          "name": "anti-ai-ui-reviewer",
+          "file": "anti-ai-ui-reviewer.md",
+          "description": "Use this agent when creating, modifying, or reviewing frontend UI components, pages, or layouts. Thi",
+          "model": "opus",
+          "color": "orange"
+        },
+        {
+          "name": "code-reviewer",
+          "file": "code-reviewer.md",
+          "description": "Use this agent after code modifications to review code quality, consistency, and maintainability. Un",
+          "model": "opus",
+          "color": "white"
+        },
+        {
+          "name": "lts-planner",
+          "file": "lts-planner.md",
+          "description": "Use this agent when you need to plan, design, or architect a feature, system, or technical approach ",
+          "model": "opus",
+          "color": "magenta"
+        },
+        {
+          "name": "ruthless-qa-tester",
+          "file": "ruthless-qa-tester.md",
+          "description": "Use this agent when you need thorough, uncompromising quality assurance testing of code, features, o",
+          "model": "opus",
+          "color": "green"
+        },
+        {
+          "name": "security-auditor",
+          "file": "security-auditor.md",
+          "description": "Use this agent for security audits before deployment, after code changes, or when reviewing authenti",
+          "model": "opus",
+          "color": "red"
+        }
+      ]
     },
     {
-      "name": "code-reviewer",
-      "file": "code-reviewer.md",
-      "description": "Use this agent after code modifications to review code quality, consistency, and maintainability. Un",
-      "model": "opus",
-      "color": "white"
-    },
-    {
-      "name": "cross-project-sync",
-      "file": "cross-project-sync.md",
-      "description": "Use this agent when modifying shared patterns across Speed_Gate projects. Analyzes whether changes i",
-      "model": "opus",
-      "color": "yellow"
-    },
-    {
-      "name": "deploy-validator",
-      "file": "deploy-validator.md",
-      "description": "Use this agent to validate deployment readiness. Checks docker-compose, .env, build scripts, image v",
-      "model": "opus",
-      "color": "blue"
-    },
-    {
-      "name": "dev-master-teacher",
-      "file": "dev-master-teacher.md",
-      "description": "Use this agent when the user wants to learn programming concepts, needs a study plan, wants guided t",
-      "model": "opus",
-      "color": "cyan"
-    },
-    {
-      "name": "lts-planner",
-      "file": "lts-planner.md",
-      "description": "Use this agent when you need to plan, design, or architect a feature, system, or technical approach ",
-      "model": "opus",
-      "color": "magenta"
-    },
-    {
-      "name": "ruthless-qa-tester",
-      "file": "ruthless-qa-tester.md",
-      "description": "Use this agent when you need thorough, uncompromising quality assurance testing of code, features, o",
-      "model": "opus",
-      "color": "green"
-    },
-    {
-      "name": "security-auditor",
-      "file": "security-auditor.md",
-      "description": "Use this agent for security audits before deployment, after code changes, or when reviewing authenti",
-      "model": "opus",
-      "color": "red"
+      "id": "kdw-infra-agents",
+      "name": "KDW 인프라/교육 에이전트 세트",
+      "author": "KDW",
+      "description": "배포 검증, 프로젝트 동기화, 프로그래밍 학습 멘토 에이전트 모음",
+      "version": "1.0.0",
+      "agents": [
+        {
+          "name": "cross-project-sync",
+          "file": "cross-project-sync.md",
+          "description": "Use this agent when modifying shared patterns across Speed_Gate projects. Analyzes whether changes i",
+          "model": "opus",
+          "color": "yellow"
+        },
+        {
+          "name": "deploy-validator",
+          "file": "deploy-validator.md",
+          "description": "Use this agent to validate deployment readiness. Checks docker-compose, .env, build scripts, image v",
+          "model": "opus",
+          "color": "blue"
+        },
+        {
+          "name": "dev-master-teacher",
+          "file": "dev-master-teacher.md",
+          "description": "Use this agent when the user wants to learn programming concepts, needs a study plan, wants guided t",
+          "model": "opus",
+          "color": "cyan"
+        }
+      ]
     }
   ]
 }

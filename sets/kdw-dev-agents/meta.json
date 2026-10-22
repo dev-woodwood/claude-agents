@@ -1,0 +1,6 @@
+{
+  "name": "KDW 개발 에이전트 세트",
+  "author": "KDW",
+  "description": "코드 리뷰, UI 검증, QA 테스트, 보안 감사, 기술 설계를 위한 에이전트 모음",
+  "version": "1.0.0"
+}
